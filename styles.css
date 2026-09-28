@@ -3,29 +3,19 @@
 margin: 0;
 padding: 0;
 box-sizing: border-box;
-	font-family: Original Surfer,sans-serif;
-	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	
+font-family: Original Surfer,sans-serif;
 }
+
+body{
+	display: grid;
+	gird-template-rows: auto 1fr auto;
+	min-height: 100 vh;
+	min-height: 100 dvh;
+}
+.header{ 
+background-color: rgba(213, 203, 195, 1);
+display: flex;
+align-items: center;
+justify-content: space- between;
+padding: 1rem 2rem;
+	}
