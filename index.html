@@ -1,36 +1,70 @@
+
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emily Rivera!</title>
     <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header class="header">
-      <h1 class="title">bienvenido a mi pagina</h1>
-      <nav>
-        <a href="#">Sobre mí</a>
-        <a href="#">Mi proyecto</a>
-      </nav>
-      <div class="languages">
-        <button class="lang-button">ES</button>
-          <button class="lang-button">EN</button>
-      </div>
-    </header>
-    <main>
-      <section class="section"id="about-me"> 
-        <h2>sobre mi</h2>
-        <p> soy emily,tengo 15 años,soy hetero, naci el 25 de enero del 2011 a las nueve y media, vivo en melgar, naci en la ciudad de bucaramanga, soy muy cansona y e importaculista,me gusta el color negro y rosado, mi comida favorita es el sushi, tambien me gusta la malteada de vainilla y el amper, tengo un hermano pequeño, me gusta salir con mis amigos, en el colegio me divierto mucho con alex, sofia y saray, me gusta maquillarme, y comprar mucho makeup, tambien me gusta andar rapido en mi moto, levo 5 años sin ver a mi papa,y mi frase favorita es carpe diem,pero tambien digo que mi trauma favorito es la "nostalgia"</p>
-      </section>
-      <h1>Mi proyecto de vida</h1>
-        <p>Quiero ser azafata porque me apasiona esa profesión</p>
+</head>
+
+<body>
+
+<header class="header">
+
+    <h1 class="title" data-label="welcome">
+        Bienvenido a mi página
+    </h1>
+
+    <nav>
+        <a href="#about-me" data-label="about-link">Sobre mí</a>
+        <a href="#my-project" data-label="project-link">Mi proyecto</a>
+    </nav>
+
+    <div class="languages">
+        <button class="lang-button" onclick="changeLanguage('es')">ES</button>
+        <button class="lang-button" onclick="changeLanguage('en')">EN</button>
+    </div>
+
+</header>
+
+<main>
+
+    <section class="section" id="about-me">
+
+        <h2 data-label="about-title">Sobre mí</h2>
+
+        <p data-label="about-text">
+            Soy Emily, tengo 15 años. Nací el 25 de enero de 2011
+            en Bucaramanga y vivo en Melgar. Me gusta el color negro
+            y rosado, mi comida favorita es el sushi y también me
+            gusta la malteada de vainilla. Tengo un hermano pequeño,
+            me gusta salir con mis amigos, maquillarme y comprar makeup.
+            Mi frase favorita es Carpe Diem y también me gusta la nostalgia.
+        </p>
+
+    </section>
+
+    <section id="my-project">
+
+        <h1 data-label="project-title">Mi proyecto de vida</h1>
+
+        <p data-label="project-description">
+            Quiero ser azafata porque me apasiona esa profesión.
+        </p>
+
         <ul>
-          <li>1.empiezo a buscar buenas universidades que me guste</ul>li>
-          <li>2.tener un ingles avanzado</li>
-          <li>3.mandar solicitud para entrar en la universidad</li>
-          <li>4.que me acepten y poder estudiar en medellin</li>
+            <li data-label="step1">1. Buscar buenas universidades que me gusten.</li>
+            <li data-label="step2">2. Tener un inglés avanzado.</li>
+            <li data-label="step3">3. Enviar mi solicitud para entrar a la universidad.</li>
+            <li data-label="step4">4. Que me acepten y poder estudiar en Medellín.</li>
         </ul>
-     
-      </main>
-      <script src="script.js"></script>
-  </body>
+
+    </section>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
 </html>
